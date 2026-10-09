@@ -1,2 +1,2 @@
 # Blog-Site
-Website for blogging
+Website for blogging football trends
