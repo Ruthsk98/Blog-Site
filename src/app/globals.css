@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html { scroll-behavior: smooth; }
+body { @apply bg-ink text-cream font-sans antialiased; }
+
+.field { @apply w-full rounded-lg border border-ink-line bg-ink-soft px-3 py-2.5 text-cream placeholder:text-neutral-500 focus:border-crimson focus:outline-none focus:ring-1 focus:ring-crimson; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-full bg-crimson px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-crimson-bright disabled:opacity-50; }
+.btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink-line px-5 py-2.5 text-sm font-semibold text-cream transition hover:border-crimson hover:text-crimson-bright; }
+
+/* Readable cream surface for article bodies */
+.prose-post { @apply text-[1.05rem] leading-8 text-neutral-800; }
+.prose-post h1, .prose-post h2, .prose-post h3 { @apply font-serif font-bold text-ink mt-10 mb-4 leading-tight; }
+.prose-post h2 { @apply text-2xl; } .prose-post h3 { @apply text-xl; }
+.prose-post p { @apply my-5; }
+.prose-post a { @apply text-crimson underline underline-offset-2 hover:text-crimson-bright; }
+.prose-post ul { @apply my-5 list-disc pl-6; } .prose-post ol { @apply my-5 list-decimal pl-6; }
+.prose-post blockquote { @apply my-6 border-l-4 border-crimson pl-5 italic text-neutral-600; }
+.prose-post img { @apply my-6 rounded-xl w-full h-auto; }
+.prose-post code { @apply rounded bg-cream-deep px-1.5 py-0.5 text-sm text-crimson; }
+.prose-post pre { @apply my-6 overflow-x-auto rounded-xl bg-ink p-4 text-sm text-cream; }
+.prose-post pre code { @apply bg-transparent p-0 text-cream; }
+.prose-post table { @apply my-6 w-full text-sm; } .prose-post th, .prose-post td { @apply border border-neutral-300 px-3 py-2 text-left; }
